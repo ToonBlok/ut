@@ -8,24 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/HHS-SMA/SMA.git"
+    "url": "git+https://github.com/ToonBlok/ut.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/HHS-SMA/SMA/issues"
+    "url": "https://github.com/ToonBlok/ut/issues"
   },
-  "homepage": "https://gitlab.com/HHS-SMA/SMA#README",
+  "homepage": "https://github.com/ToonBlok/ut#readme",
   "dependencies": {
     "d3": "^5.0.0",
     "jasmine": "^3.1.0",
-    "karma": "^2.0.0",
-    "requirejs": "^2.3.5"
-  },
-  "devDependencies": {
-    "karma-firefox-launcher": "^1.1.0",
-    "karma-jasmine": "^1.1.1",
-    "karma-requirejs": "^1.1.0"
+    "jsdom": "^11.6.2"
   }
 }
