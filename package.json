@@ -1,0 +1,24 @@
+{
+  "name": "ut",
+  "version": "1.0.0",
+  "description": "",
+  "main": "chart.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/HHS-SMA/SMA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/HHS-SMA/SMA/issues"
+  },
+  "homepage": "https://gitlab.com/HHS-SMA/SMA#README",
+  "dependencies": {
+    "d3": "^5.0.0",
+    "jasmine": "^3.1.0"
+  }
+}
