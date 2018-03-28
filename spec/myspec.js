@@ -37,8 +37,9 @@ describe('chart tests', ()=>
 			.append('g')
 			.attr('transform', 'translate(' + (WIDTH / 2) +  ',' + (HEIGHT / 2) + ')');
 
-		var chart = new sma_chart(svg);
-		chart.respond();
+		var chart = new sma_chart(svg, d3);
+		chart.add_project_circle("Boont");
+		console.log(dom.serialize());
 		//console.log(dom.window.document.querySelector("p").textContent); // "Hello world"
 	});
 

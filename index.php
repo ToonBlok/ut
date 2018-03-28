@@ -21,6 +21,7 @@
 	<body>
 
 		<div id="chart" align="center"></div>
+		<script src="node_modules/requirejs/require.js"></script>
 
 		<script src="data_getter.js"></script>
 		<script src="chart.js"></script>

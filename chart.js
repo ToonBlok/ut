@@ -1,6 +1,11 @@
 "use strict"
 
+// Required for tests, but gives error in browser
 var d3 = require("d3");
+//require(['d3'], function (foo) {
+//    //foo is now loaded.
+//});
+//
 const WIDTH = 1500;
 const HEIGHT = 900;
 const RADIUS = Math.min(WIDTH, HEIGHT) / 2;
@@ -12,20 +17,19 @@ const LEGEND_X = WIDTH - 950;
 
 class sma_chart
 {
-	constructor(svg)
+	constructor(svg, fake_d3)
 	{
-		if (svg == undefined)
-		{
+		if (svg == undefined) {
 			this.svg = d3.select('#chart')
 				.append('svg')
 				.attr('width', WIDTH)
 				.attr('height', HEIGHT)
 				.append('g')
 				.attr('transform', 'translate(' + (WIDTH / 2) +  ',' + (HEIGHT / 2) + ')');
-		}
-		else
-		{
+		} else {
 			this.svg = svg;
+			//var d3 = fake_d3;
+			console.log("Both are defined");
 		}	
 
 		this.arc = d3.arc()
@@ -35,11 +39,6 @@ class sma_chart
 		this.pie = d3.pie()
 			.value(function(d){ return d.stakeholders.length;})
 			.sort(null);
-	}
-
-	respond()
-	{
-		console.log("ok!");
 	}
 
 	add_piechart()
