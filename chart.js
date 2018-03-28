@@ -116,13 +116,6 @@ class sma_chart
 	}
 }
 
-//module.exports = function()
-//{
-//	var chart = new sma_chart();
-//	return chart;
-//}
-//module.exports = 'Hello world';
-// Export node module.
 if ( typeof module !== 'undefined' && module.hasOwnProperty('exports') )
 {
     module.exports = sma_chart;
